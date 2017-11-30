@@ -9,7 +9,7 @@ Casual Match
 
 Create a game
 
-<- POST /api/v1/table/?token=TOKEN
+```<- POST /api/v1/table/?token=TOKEN
    {
     'score_wins': '5',
     'game_wins': '2',
@@ -20,34 +20,34 @@ Create a game
     'game': { 'id': 'ID' }
     'red': { 'id': 'ID' }
     'blue': { 'id': 'ID' }
-   }
+   }```
 
 Score a goal
 
-<- POST /foos/api/v1/goal/?token=TOKEN
+```<- POST /foos/api/v1/goal/?token=TOKEN
    {
     'game': { 'id': 'ID' }
     'concede': 'ID'
    }
 -> 200
    {
-    'goal_id': 'NUM',
+    'goal_id': 'ID',
     'blue_score': 'NUM',
     'red_score': 'NUM',
     'match_done': 'no',
     'next_game': 'ID'
-   }
+   }```
 
 Reverse a goal
 
-<- DELETE /foos/api/v1/goal/{goal_id}?token=TOKEN
+```<- DELETE /foos/api/v1/goal/{goal_id}?token=TOKEN
 -> 200
    {
     'blue_score': 'NUM',
     'red_score': 'NUM',
     'match_done': 'no',
     'next_game': 'ID'
-   }
+   }```
 
 
 Tournament Match
@@ -55,7 +55,7 @@ Tournament Match
 
 Create a game
 
-<- POST /foos/api/v1/table/?token=TOKEN
+```<- POST /foos/api/v1/table/?token=TOKEN
    {
     'blue_goalie': 'ID',
     'red_goalie': 'ID',
@@ -70,37 +70,38 @@ Create a game
     'game': { 'id': 'ID' }
     'red': { 'id': 'ID' }
     'blue': { 'id': 'ID' }
-   }
+   }```
 
 
 Score a goal
 
-<- POST /foos/api/v1/goal/?token=TOKEN
+```<- POST /foos/api/v1/goal/?token=TOKEN
    {
     'game': { 'id': 'ID' }
     'concede': 'ID'
    }
 -> 200
    {
+    'goal_id': 'ID',
     'blue_score': 'NUM',
     'red_score': 'NUM',
     'match_done': 'no',
     'next_game': 'ID'
-   }
+   }```
 
 
 Reverse a goal
 
-<- DELETE /foos/api/v1/goal/{goal_id}?token=TOKEN
+```<- DELETE /foos/api/v1/goal/{goal_id}?token=TOKEN
 -> 200
    {
     'blue_score': 'NUM',
     'red_score': 'NUM',
     'match_done': 'no',
     'next_game': 'ID'
-   }
+   }```
 
 
 Cancel a game
 
-DELETE /api/v1/games/{game_id}/
+```DELETE /api/v1/games/{game_id}/```
