@@ -20,7 +20,8 @@ Create a game
     'game': { 'id': 'ID' }
     'red': { 'id': 'ID' }
     'blue': { 'id': 'ID' }
-   }```
+   }
+```
 
 Score a goal
 
@@ -36,7 +37,8 @@ Score a goal
     'red_score': 'NUM',
     'match_done': 'no',
     'next_game': 'ID'
-   }```
+   }
+```
 
 Reverse a goal
 
@@ -47,7 +49,8 @@ Reverse a goal
     'red_score': 'NUM',
     'match_done': 'no',
     'next_game': 'ID'
-   }```
+   }
+```
 
 
 Tournament Match
@@ -70,7 +73,8 @@ Create a game
     'game': { 'id': 'ID' }
     'red': { 'id': 'ID' }
     'blue': { 'id': 'ID' }
-   }```
+   }
+```
 
 
 Score a goal
@@ -87,7 +91,8 @@ Score a goal
     'red_score': 'NUM',
     'match_done': 'no',
     'next_game': 'ID'
-   }```
+   }
+```
 
 
 Reverse a goal
@@ -99,9 +104,11 @@ Reverse a goal
     'red_score': 'NUM',
     'match_done': 'no',
     'next_game': 'ID'
-   }```
+   }
+```
 
 
 Cancel a game
 
-```DELETE /api/v1/games/{game_id}/```
+```DELETE /api/v1/games/{game_id}/
+```
